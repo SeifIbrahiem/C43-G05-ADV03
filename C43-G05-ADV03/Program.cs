@@ -21,8 +21,11 @@ namespace C43_G05_ADV03
         {
             int[] numbers = { 9, 8, 5, 6, 2, 3, 7 };
             printarray(numbers);
-            Sortingalgorithm.BubblesortAscending(numbers);
+            //Sortingalgorithm.BubblesortAscending(numbers);
             //Sortingalgorithm.BubblesortSDscending(numbers);
+            //printarray(numbers);
+            sortingfunDelegate X = Sortingcondition.comparegtr;
+            Sortingalgorithm.Bubblesort(numbers, X);
             printarray(numbers);
         }
     } 
